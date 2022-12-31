@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:uno",
+    "port": "/dev/tty.usbmodem11301",
+    "sketch": "test_09_bno055_read/test_09_bno055_read.ino",
+    "output": "./output"
+}
