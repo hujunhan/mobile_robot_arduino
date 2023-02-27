@@ -73,14 +73,15 @@ void loop()
             test_speed = 0;
         }
 
-        Serial.print(robot.left_rpm_encoder);
-        Serial.print(",");
-        Serial.print(robot.left_rpm_goal);
-        Serial.print(",");
-        Serial.println(robot.left_output);
+        // Serial.print(robot.left_rpm_encoder);
+        // Serial.print(",");
+        // Serial.print(robot.left_rpm_goal);
+        // Serial.print(",");
+        // Serial.println(robot.left_output);
         // Serial.println(robot.left_pid.lastTime);
         if (irrecv.decode(&results)) // Returns 0 if no data ready, 1 if data ready.
         {
+            Serial.println(results.value);
             switch (results.value)
             {
             case 0xFF18E7:
